@@ -1,4 +1,4 @@
-import deividVeras from "../../assets/customerReviewsImages/deividVeras.jpg"
+import deividVeras from "../../assets/reviews/deividVeras.jpg"
 
 export const CustomerReviews = () => {
   return (

@@ -1,8 +1,8 @@
-import wo_logo from "../../../public/wo_logo.png"
+import wo_logo from "../../../../public/wo_logo.png"
 
 export const Header = () => {
   return (
-    <div className="w-full px-17 py-8 flex items-center gap-4 fixed z-100">
+    <div className="w-full px-17 py-7 flex items-center gap-4 fixed z-1 bg-white">
       <div className="flex items-center w-full">
         <img src={wo_logo} alt="WO Logo" className="h-18 cursor-pointer"/>
         <div className="flex gap-6 justify-center w-full">
