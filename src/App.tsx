@@ -1,3 +1,4 @@
+import { CustomerReviews } from "./components/CustomerReviews"
 import { Header } from "./components/Header"
 import { Home } from "./pages/Home"
 
@@ -7,8 +8,7 @@ export const App = () => {
     <div className="w-full min-h-screen">
       <Header />
       <Home />
+      <CustomerReviews />
     </div>
   )
 }
-
-export default App

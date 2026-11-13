@@ -1,4 +1,4 @@
-import image1 from '../../assets/initial-images/image1.jpg'
+import image1 from '../../assets/showCase/image1.jpg'
 
 export const PortfolioShowcase = () => {
   return (
