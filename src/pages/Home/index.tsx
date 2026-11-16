@@ -1,3 +1,4 @@
+import { Footer } from "../../components/layout/Footer"
 import { CustomerReviews } from "./sections/CustomerReviews"
 import { PartnerShips } from "./sections/partnerships"
 import { PortfolioShowcase } from "./sections/PortfolioShowcase"
@@ -10,6 +11,7 @@ export const Home = () => {
         <CustomerReviews />
         <PartnerShips />
       </div>
+      <Footer />
     </section>
   )
 }
