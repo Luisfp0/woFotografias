@@ -5,7 +5,7 @@ import { Carousel } from "../Carousel"
 
 export const CustomerReviews = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full py-10 gap-10">
+    <div className="flex flex-col items-center justify-center w-full gap-10">
       <h1 className="text-2xl font-bold">Clientes estão dizendo</h1>
         <Carousel> 
           <article className="flex-[0_0_100%] ">
