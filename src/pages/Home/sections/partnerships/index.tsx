@@ -5,7 +5,7 @@ import tmaisLogo from "../../../../assets/partnerShips/tmais.png"
 
 export const PartnerShips = () => { 
   return (
-    <section className="flex flex-col w-full items-center justify-center gap-22">
+    <section className="flex flex-col w-full items-center justify-center gap-22 pb-10 px-5">
       <h1 className="text-2xl font-bold">Parcerias</h1>
       <ul className="flex gap-10 items-center">
         <li>
