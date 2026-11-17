@@ -1,4 +1,5 @@
 import wo_logo from "../../../../public/wo_logo.png"
+import { Link } from "react-router-dom"
 
 export const Header = () => {
   return (
@@ -7,10 +8,10 @@ export const Header = () => {
         <img src={wo_logo} alt="WO Logo" className="h-14 sm:h-14 md:h-16 lg:h-18 cursor-pointer"/>
         <nav className="flex w-full justify-center" aria-label="Navegação principal">
           <ul className="flex gap-6">
-            <li><a className="text-xs font-bold md:text-sm lg:text-base" href="#home">Home</a></li>
-            <li><a className="text-xs font-bold md:text-sm lg:text-base" href="#gallery">Galerias</a></li>
-            <li><a className="text-xs font-bold md:text-sm lg:text-base" href="#about">Sobre</a></li>
-            <li><a className="text-xs font-bold md:text-sm lg:text-base" href="#testimonials">Depoimentos</a></li>
+            <li><Link className="text-xs font-bold md:text-sm lg:text-base" to="/home">Home</Link></li>
+            <li><Link className="text-xs font-bold md:text-sm lg:text-base" to="/gallery">Galeria</Link></li>
+            <li><Link className="text-xs font-bold md:text-sm lg:text-base" to="/about">Sobre</Link></li>
+            <li><Link className="text-xs font-bold md:text-sm lg:text-base" to="/testimonials">Depoimentos</Link></li>
           </ul>
         </nav>
       </div>

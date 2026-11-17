@@ -1,1 +1,15 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+.modal-backdrop {
+  animation: modal-backdrop-fade 700ms ease-out forwards;
+}
+
+@keyframes modal-backdrop-fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.5;
+  }
+}
