@@ -6,10 +6,8 @@ export const Home = () => {
   return (
     <section className="pt-14 md:pt-16 lg:pt-18 flex flex-col gap-13">
       <PortfolioShowcase />
-      <div className="flex flex-col gap-13">
-        <CustomerReviews />
-        <PartnerShips />
-      </div>
+      <CustomerReviews />
+      <PartnerShips />
     </section>
   )
 }
