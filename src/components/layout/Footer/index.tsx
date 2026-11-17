@@ -1,4 +1,4 @@
-import instagramIcon from "../../../assets/svgs/instagram.svg"
+import { InstagramIcon } from "../../../assets/svgs/InstagramIcon"
 
 export const Footer = () => {
   return (
@@ -8,8 +8,13 @@ export const Footer = () => {
           <span className="text-white font-bold text-xs lg:text-base">Wo Fotografia </span>
           <span className="text-white text-xs lg:text-base"> / Contato</span>
         </div>
-        <a href="https://www.instagram.com/wo.fotografia/" target="_blank" rel="noopener noreferrer">
-          <img src={instagramIcon} alt="Instagram Icon" className="h-3 w-3 sm:h-4 sm:w-4 invert hover:scale-120 transition-transform duration-200" />
+        <a
+          href="https://www.instagram.com/wo.fotografia/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <InstagramIcon className="h-3 w-3 text-white hover:scale-120 transition-transform duration-200 sm:h-4 sm:w-4" />
         </a>
       </div>
     </div>
