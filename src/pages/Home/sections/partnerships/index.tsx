@@ -3,29 +3,32 @@ import geneseLogo from "../../../../assets/partnerShips/genese.png"
 import outsideLogo from "../../../../assets/partnerShips/outside.png"
 import tmaisLogo from "../../../../assets/partnerShips/tmais.png"
 
+const logoClassName = "h-16 w-24 object-contain transition-transform duration-200 hover:scale-110 sm:h-20 sm:w-32 md:h-24 md:w-36"
+
 export const PartnerShips = () => { 
+
   return (
-    <section className="flex flex-col w-full items-center justify-center gap-22 pb-5 px-5">
+    <section className="flex flex-col w-full items-center justify-center gap-10 pb-5 px-5">
       <h1 className="text-2xl font-bold">Parcerias</h1>
-      <ul className="flex gap-10 items-center">
+      <ul className="flex items-center justify-center gap-6 sm:gap-10">
         <li>
           <a href="https://turbomais.com.br/" target="_blank" rel="noopener noreferrer">
-            <img src={tmaisLogo} className="hover:scale-110 transition-transform duration-200" alt="Turbomais Logo" />
+            <img src={tmaisLogo} className={logoClassName} alt="Turbomais Logo" />
           </a>
         </li>
         <li>
           <a href="https://www.instagram.com/geneseturismo/" target="_blank" rel="noopener noreferrer">
-            <img src={geneseLogo} className="hover:scale-110 transition-transform duration-200" alt="Genese Logo" />
+            <img src={geneseLogo} className={logoClassName} alt="Genese Logo" />
           </a>
         </li>
         <li>
           <a href="https://levesupermercado.com.br/" target="_blank" rel="noopener noreferrer">
-            <img src={leveLogo} className="hover:scale-110 transition-transform duration-200" alt="Leve logo" />
+            <img src={leveLogo} className={logoClassName} alt="Leve logo" />
           </a>
         </li>
         <li>
           <a href="https://www.instagram.com/outsideadventureanapolis/" target="_blank" rel="noopener noreferrer">
-            <img src={outsideLogo} className="hover:scale-110 transition-transform duration-200" alt="Outside Logo" />
+            <img src={outsideLogo} className={logoClassName} alt="Outside Logo" />
           </a>
         </li>
       </ul>

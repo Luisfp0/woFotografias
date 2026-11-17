@@ -31,7 +31,7 @@ export const PortfolioShowcase = () => {
             className="fixed inset-0 z-1 cursor-pointer bg-black peer modal-backdrop"
           />
           <img
-            className="fixed z-40 left-1/2 top-1/2  w-90% -translate-x-1/2 -translate-y-1/2 rounded-lg"
+            className="fixed z-40 left-1/2 top-1/2  w-90% -translate-x-1/2 -translate-y-1/2 rounded-3xl"
             src={selectedImage}
             alt="Imagem ampliada"
           />
