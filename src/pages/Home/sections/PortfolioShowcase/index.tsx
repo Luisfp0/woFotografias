@@ -30,7 +30,7 @@ export const PortfolioShowcase = () => {
   }
 
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-4 w-full gap-[0.3px] lg:gap-0 ">
+    <div className="grid grid-cols-2 lg:grid-cols-4 w-full gap-[0.3px] lg:gap-0">
       {selectedImage && (
         <>
           <div
@@ -38,7 +38,7 @@ export const PortfolioShowcase = () => {
             className="fixed inset-0 z-1 cursor-pointer bg-black peer modal-backdrop"
           />
           <img
-            className="fixed z-1 left-1/2 top-1/2 max-w-4xl -translate-x-1/2 -translate-y-1/2 rounded-3xl"
+            className="fixed z-1 left-1/2 top-1/2 w-md sm:w-lg md:w-2xl lg:w-4xl -translate-x-1/2 -translate-y-1/2 rounded-3xl"
             src={selectedImage.image}
             alt="Imagem ampliada"
           />
