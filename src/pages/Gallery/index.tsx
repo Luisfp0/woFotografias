@@ -1,7 +1,9 @@
+import { GalleryCategoryGrid } from '../../components/GalleryCategoryGrid'
+
 export const Gallery = () => {
   return (
-    <main className="min-h-screen pt-14 md:pt-16 lg:pt-18">
-      <h1 className="text-center text-lg font-bold sm:text-2xl">Galeria</h1>
+    <main className="min-h-screen w-full flex justify-center pt-15 md:pt-18 lg:pt-22 pb-2">
+      <GalleryCategoryGrid/>
     </main>
   )
 }
