@@ -1,24 +1,10 @@
 import { useState } from 'react'
-import type { SelectedImage } from './types'
-import image1 from '../../../../assets/portfolio/image1.jpg'
-import image2 from '../../../../assets/portfolio/image2.jpg'
-import image3 from '../../../../assets/portfolio/image3.jpg'
-import image4 from '../../../../assets/portfolio/image4.jpg'
-import image5 from '../../../../assets/portfolio/image5.jpg'
-import image6 from '../../../../assets/portfolio/image6.jpg'
-import image7 from '../../../../assets/portfolio/image7.jpg'
-import image8 from '../../../../assets/portfolio/image8.jpg'
-import image9 from '../../../../assets/portfolio/image9.jpg'
-import image10 from '../../../../assets/portfolio/image10.jpg'
-import image11 from '../../../../assets/portfolio/image11.jpg'
-import image12 from '../../../../assets/portfolio/image12.jpg'
-import { CloseIcon } from '../../../../assets/svgs/CloseIcon'
-import { NextIcon } from '../../../../assets/svgs/nextIcon'
+import type { PortfolioShowcaseProps, SelectedImage } from './types'
+import { CloseIcon } from '../../assets/svgs/CloseIcon'
+import { NextIcon } from '../../assets/svgs/nextIcon'
 
-export const PortfolioShowcase = () => {
+export const PortfolioShowcase = ({ portfolioImages, className }: PortfolioShowcaseProps) => {
   const [selectedImage, setSelectedImage] = useState<SelectedImage | null>(null)
-
-  const portfolioImages = [image1, image2,image3,image4,image5,image6,image7,image8,image9,image10,image11,image12]
 
   const handleNextPrevImage = (nextPrev: 'next' | 'prev') => {
     if (!selectedImage) return
@@ -30,8 +16,8 @@ export const PortfolioShowcase = () => {
   }
 
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-4 w-full gap-[0.3px] lg:gap-0">
-      {selectedImage && (
+    <div className={`${className ? className : "grid grid-cols-2 lg:grid-cols-4"} w-full gap-[0.3px] lg:gap-0`}>
+        {selectedImage &&
         <>
           <div
             onClick={() => setSelectedImage(null)}
@@ -74,15 +60,15 @@ export const PortfolioShowcase = () => {
             <NextIcon className="h-15 w-15 text-white hover:text-black hover:scale-125" />
           </button>
         </>
-      )}
+        }
       {portfolioImages.map((image, index) => {
         return (
           <img
             onClick={() => setSelectedImage({image, index})}
             src={image}
             key={index}
-            className="w-full h-auto hover:brightness-50 cursor-pointer"
-            alt="Portfolio Item 1"
+            className="w-full max-h-84 object-cover hover:brightness-50 cursor-pointer"
+            alt={`Portfolio Item ${index}`}
           />
         )
       })}

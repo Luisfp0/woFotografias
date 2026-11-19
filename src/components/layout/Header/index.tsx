@@ -15,7 +15,7 @@ export const Header = () => {
         <nav className="flex w-full justify-center" aria-label="Navegação principal">
           <ul className="flex gap-6 text-xs font-bold md:text-sm lg:text-base">
             <li><Link to="/home">Home</Link></li>
-            <li><Link to="/gallery">Galeria</Link></li>
+            <li><Link to="/gallery">Galerias</Link></li>
             <li><Link to="/about">Sobre</Link></li>
             <li><Link to="/testimonials">Depoimentos</Link></li>
           </ul>
