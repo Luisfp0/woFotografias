@@ -4,7 +4,8 @@ export interface SelectedImage {
 }
 
 export interface PortfolioShowcaseProps {
- portfolioImages: string[];
- className?: string;
- hasAmplify?: boolean;
+  portfolioImages: string[]
+  gridConfig?: string
+  title?: string
+  hasAmplify?: boolean
 }
