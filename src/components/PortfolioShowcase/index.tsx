@@ -76,7 +76,9 @@ export const PortfolioShowcase = ({
         </>
       )}
       <div className="flex flex-col gap-5 items-center">
-        {title && <h1 className="text-2xl items-center">{title}</h1>}
+        {title && (
+          <h1 className="text-lg sm:text-2xl font-bold text-center">{title}</h1>
+        )}
         <div
           className={`${gridConfig ? gridConfig : 'grid grid-cols-2 lg:grid-cols-4'} w-full gap-0`}
         >
