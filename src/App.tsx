@@ -7,6 +7,7 @@ import { Header } from './components/layout/Header'
 import { Route, Routes } from 'react-router-dom'
 import { GalleryBirthdays } from './pages/GalleryBirthdays'
 import { GalleryWeddings } from './pages/GalleryWeddings'
+import { GalleryAuditions } from './pages/GalleryAuditions'
 
 export const App = () => {
   return (
@@ -20,6 +21,7 @@ export const App = () => {
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/gallery/birthdays" element={<GalleryBirthdays />} />
         <Route path="/gallery/weddings" element={<GalleryWeddings />} />
+        <Route path="/gallery/auditions" element={<GalleryAuditions />} />
       </Routes>
       <Footer />
     </div>

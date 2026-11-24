@@ -9,14 +9,14 @@ import pre_wedding from '../../assets/galleryCovers/pre-wedding.webp'
 import { Link } from 'react-router-dom'
 
 const categories = [
-  { image: weddings, title: 'CASAMENTOS', route: "/gallery/weddings" },
-  { image: birthdays, title: 'ANIVERSÁRIOS', route: "/gallery/birthdays" },
-  { image: photo_shoot, title: 'ENSAIOS', route: "/gallery/photo_shoot" },
-  { image: pre_wedding, title: 'PRÉ-WEDDINGS', route: "/gallery/pre_weddings" },
-  { image: products, title: 'PRODUTOS', route: "/gallery/products" },
-  { image: workShops, title: 'WORKSHOPS', route: "/gallery/work_shops"},
-  { image: sports, title: 'ESPORTES', route: "/gallery/sports"},
-  { image: births, title: 'NEWBORN', route: "/gallery/births" },
+  { image: weddings, title: 'CASAMENTOS', route: '/gallery/weddings' },
+  { image: birthdays, title: 'ANIVERSÁRIOS', route: '/gallery/birthdays' },
+  { image: photo_shoot, title: 'ENSAIOS', route: '/gallery/auditions' },
+  { image: pre_wedding, title: 'PRÉ-WEDDINGS', route: '/gallery/pre_weddings' },
+  { image: products, title: 'PRODUTOS', route: '/gallery/products' },
+  { image: workShops, title: 'WORKSHOPS', route: '/gallery/work_shops' },
+  { image: sports, title: 'ESPORTES', route: '/gallery/sports' },
+  { image: births, title: 'NEWBORN', route: '/gallery/births' },
 ]
 
 export const GalleryCategoryGrid = () => {
@@ -31,8 +31,10 @@ export const GalleryCategoryGrid = () => {
                 alt={title}
                 className="w-full max-h-80 object-cover transition group-hover:brightness-50"
               />
-              <span className="absolute inset-0 flex items-center justify-center text-sm md:text-md lg:text-xl font-semibold 
-                text-white md:opacity-0 md:group-hover:opacity-100">
+              <span
+                className="absolute inset-0 flex items-center justify-center text-sm md:text-md lg:text-xl font-semibold 
+                text-white md:opacity-0 md:group-hover:opacity-100"
+              >
                 {title}
               </span>
             </Link>
