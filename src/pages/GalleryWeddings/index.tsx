@@ -24,9 +24,10 @@ export const GalleryWeddings = () => {
   return (
     <main className="min-h-screen w-full flex justify-center pt-15 md:pt-18 lg:pt-22 pb-2">
       <PortfolioShowcase
-        gridConfig="columns-1 sm:columns-2 md:columns-3 lg:columns-4 "
+        gridConfig="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
         portfolioImages={images}
         title="Casamentos"
+        compactFirstRows
       />
     </main>
   )

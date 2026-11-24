@@ -8,4 +8,5 @@ export interface PortfolioShowcaseProps {
   gridConfig?: string
   title?: string
   hasAmplify?: boolean
+  compactFirstRows?: boolean
 }

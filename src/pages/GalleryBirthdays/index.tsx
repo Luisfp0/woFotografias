@@ -8,7 +8,6 @@ import image6 from '../../assets/galleryBirthdaysImages/image6.jpg'
 import image7 from '../../assets/galleryBirthdaysImages/image7.jpg'
 import image8 from '../../assets/galleryBirthdaysImages/image8.jpg'
 import image9 from '../../assets/galleryBirthdaysImages/image9.jpg'
-import image10 from '../../assets/galleryBirthdaysImages/image10.jpg'
 
 export const GalleryBirthdays = () => {
   const images = [
@@ -21,14 +20,14 @@ export const GalleryBirthdays = () => {
     image7,
     image8,
     image9,
-    image10,
   ]
   return (
     <main className="min-h-screen w-full flex justify-center pt-15 md:pt-18 lg:pt-22 pb-2">
       <PortfolioShowcase
-        gridConfig="columns-1 sm:columns-2 md:columns-3 lg:columns-4 "
+        gridConfig="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
         portfolioImages={images}
         title="Aniversários"
+        compactFirstRows
       />
     </main>
   )

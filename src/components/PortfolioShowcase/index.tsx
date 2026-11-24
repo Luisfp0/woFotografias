@@ -7,6 +7,7 @@ export const PortfolioShowcase = ({
   portfolioImages,
   gridConfig,
   title,
+  compactFirstRows = false,
 }: PortfolioShowcaseProps) => {
   const [selectedImage, setSelectedImage] = useState<SelectedImage | null>(null)
 
@@ -88,7 +89,13 @@ export const PortfolioShowcase = ({
                 onClick={() => setSelectedImage({ image, index })}
                 src={image}
                 key={index}
-                className="w-full break-inside-avoid hover:brightness-50 cursor-pointer"
+                className={`w-full break-inside-avoid object-cover hover:brightness-50 cursor-pointer ${
+                  compactFirstRows
+                    ? index < 6
+                      ? 'aspect-[3/3]'
+                      : 'aspect-[2/3]'
+                    : ''
+                }`}
                 alt={`Portfolio Item ${index}`}
               />
             )
