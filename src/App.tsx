@@ -1,11 +1,12 @@
-import { Home } from "./pages/Home"
-import { Gallery } from "./pages/Gallery"
-import { About } from "./pages/About"
-import { Footer } from "./components/layout/Footer"
-import { Testimonials } from "./pages/Testimonials"
-import { Header } from "./components/layout/Header"
-import { Route, Routes } from "react-router-dom"
-import { GalleryBirthdays } from "./pages/GalleryBirthdays"
+import { Home } from './pages/Home'
+import { Gallery } from './pages/Gallery'
+import { About } from './pages/About'
+import { Footer } from './components/layout/Footer'
+import { Testimonials } from './pages/Testimonials'
+import { Header } from './components/layout/Header'
+import { Route, Routes } from 'react-router-dom'
+import { GalleryBirthdays } from './pages/GalleryBirthdays'
+import { GalleryWeddings } from './pages/GalleryWeddings'
 
 export const App = () => {
   return (
@@ -18,6 +19,7 @@ export const App = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/gallery/birthdays" element={<GalleryBirthdays />} />
+        <Route path="/gallery/weddings" element={<GalleryWeddings />} />
       </Routes>
       <Footer />
     </div>
