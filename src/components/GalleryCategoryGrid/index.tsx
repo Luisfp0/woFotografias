@@ -14,7 +14,7 @@ const categories = [
   { image: photo_shoot, title: 'ENSAIOS', route: '/gallery/auditions' },
   { image: pre_wedding, title: 'PRÉ-WEDDINGS', route: '/gallery/pre_weddings' },
   { image: products, title: 'PRODUTOS', route: '/gallery/products' },
-  { image: workShops, title: 'WORKSHOPS', route: '/gallery/work_shops' },
+  { image: workShops, title: 'WORKSHOPS', route: '/gallery/workshops' },
   { image: sports, title: 'ESPORTES', route: '/gallery/sports' },
   { image: births, title: 'NEWBORN', route: '/gallery/births' },
 ]

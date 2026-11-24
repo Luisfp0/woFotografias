@@ -10,6 +10,7 @@ import { GalleryWeddings } from './pages/GalleryWeddings'
 import { GalleryAuditions } from './pages/GalleryAuditions'
 import { GalleryPreWeddings } from './pages/GalleryPreWeddings'
 import { GalleryProducts } from './pages/GalleryProducts'
+import { GalleryWorkshops } from './pages/GalleryWorkshops'
 
 export const App = () => {
   return (
@@ -26,6 +27,7 @@ export const App = () => {
         <Route path="/gallery/auditions" element={<GalleryAuditions />} />
         <Route path="/gallery/pre_weddings" element={<GalleryPreWeddings />} />
         <Route path="/gallery/products" element={<GalleryProducts />} />
+        <Route path="/gallery/workshops" element={<GalleryWorkshops />} />
       </Routes>
       <Footer />
     </div>
