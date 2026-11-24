@@ -8,6 +8,8 @@ import { Route, Routes } from 'react-router-dom'
 import { GalleryBirthdays } from './pages/GalleryBirthdays'
 import { GalleryWeddings } from './pages/GalleryWeddings'
 import { GalleryAuditions } from './pages/GalleryAuditions'
+import { GalleryPreWeddings } from './pages/GalleryPreWeddings'
+import { GalleryProducts } from './pages/GalleryProducts'
 
 export const App = () => {
   return (
@@ -22,6 +24,8 @@ export const App = () => {
         <Route path="/gallery/birthdays" element={<GalleryBirthdays />} />
         <Route path="/gallery/weddings" element={<GalleryWeddings />} />
         <Route path="/gallery/auditions" element={<GalleryAuditions />} />
+        <Route path="/gallery/pre_weddings" element={<GalleryPreWeddings />} />
+        <Route path="/gallery/products" element={<GalleryProducts />} />
       </Routes>
       <Footer />
     </div>
